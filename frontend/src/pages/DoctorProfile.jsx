@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./DoctorProfile.css";
 
-const API = "http://localhost:5000";
+const API = "https://smart-hospital-token-booking-system.onrender.com";
 
 export default function DoctorProfile() {
   const navigate = useNavigate();

@@ -4,7 +4,7 @@ import "./PharmacyTrackerPage.css";
 import { auth } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";
 
-const API = "http://localhost:5000";
+const API = "https://smart-hospital-token-booking-system.onrender.com";
 const socket = io(API);
 
 export default function PharmacyTrackerPage() {

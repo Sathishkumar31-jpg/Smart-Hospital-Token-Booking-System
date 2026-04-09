@@ -9,7 +9,7 @@ import {
 } from "../config/queueLimits";
 import "./BookAppointment.css";
 
-const API = "http://localhost:5000";
+const API = "https://smart-hospital-token-booking-system.onrender.com";
 
 // ⏱️ Average consultation time (minutes)
 const AVG_CONSULT_TIME = 10;

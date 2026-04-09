@@ -6,7 +6,7 @@ import { io } from "socket.io-client";
 import HospitalMap from "../components/HospitalMap";
 import "./QueuePage.css";
 
-const API = "http://localhost:5000";
+const API = "https://smart-hospital-token-booking-system.onrender.com";
 const AVG = 5 * 60;
 const socket = io(API);
 

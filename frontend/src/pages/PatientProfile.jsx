@@ -4,7 +4,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import "./PatientProfile.css";
 
-const API = "http://localhost:5000";
+const API = "https://smart-hospital-token-booking-system.onrender.com";
 
 export default function PatientProfile() {
   const nav = useNavigate();

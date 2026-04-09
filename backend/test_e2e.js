@@ -1,6 +1,6 @@
 import http from 'http';
 
-const API = 'http://localhost:5000';
+const API = "https://smart-hospital-token-booking-system.onrender.com";
 
 async function fetchJSON(path, method = 'GET', body = null) {
   return new Promise((resolve, reject) => {
