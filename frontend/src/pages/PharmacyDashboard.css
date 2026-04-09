@@ -1,0 +1,147 @@
+.pharmacy-dash {
+  padding: 40px;
+  min-height: 100vh;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.pharmacy-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.pharmacy-header h1 {
+  font-size: 36px;
+  color: #38bdf8;
+  margin: 0 0 10px 0;
+}
+
+.pharmacy-header p {
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.order-card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #334155;
+  transition: transform 0.2s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 12px;
+}
+
+.order-head h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #f1f5f9;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-info { background: #3b82f6; color: #fff; }
+.badge-warn { background: #f59e0b; color: #fff; }
+
+.medicines-list {
+  background: #0f172a;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.medicines-list ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+  color: #cbd5e1;
+}
+
+.billing-section {
+  background: rgba(255,255,255,0.03);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.bill-form {
+  display: flex;
+  gap: 10px;
+}
+
+.bill-form input {
+  flex: 1;
+  background: #0f172a;
+  border: 1px solid #475569;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.bill-form input:focus {
+  border-color: #38bdf8;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-primary { background: #0284c7; color: white; }
+.btn-primary:hover { background: #0369a1; }
+
+.btn-success { background: #10b981; color: white; width: 100%; padding: 14px; font-size: 15px;}
+.btn-success:hover { background: #059669; }
+
+.bill-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.pay-status {
+  font-weight: bold;
+}
+.pay-status.pending { color: #facc15; }
+.pay-status.paid { color: #10b981; }
+
+.status-footer {
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+}
+
+.status-requested { color: #cbd5e1; }
+.status-processing { color: #f59e0b; }
+.status-ready { color: #10b981; }
+.status-delivered { color: #3b82f6; opacity: 0.7; }

@@ -1,0 +1,63 @@
+.success-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(12,24,35,0.9), rgba(12,24,35,0.9)),
+    url("/doctor.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: #eaeaea;
+  padding: 40px;
+}
+
+.success-page h1 {
+  font-size: 42px;
+  margin-bottom: 18px;
+  color: #00ffcc;
+}
+
+.success-page p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+.success-page b {
+  color: #00c6ff;
+}
+
+/* HOME BUTTON */
+.success-page button {
+  margin-top: 30px;
+  padding: 14px 36px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  box-shadow: 0 14px 30px rgba(0,114,255,0.35);
+}
+
+.success-page button:hover {
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .success-page h1 {
+    font-size: 30px;
+  }
+
+  .success-page p {
+    font-size: 16px;
+  }
+}

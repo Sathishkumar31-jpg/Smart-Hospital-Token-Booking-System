@@ -1,0 +1,71 @@
+.doctor-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.doctor-glass {
+  width: 100%;
+  max-width: 820px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  padding: 24px;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1.8rem;
+  margin-top: 6px;
+}
+
+.card.emergency {
+  background: rgba(255, 80, 80, 0.4);
+}
+
+.card.opd {
+  background: rgba(80, 160, 255, 0.4);
+}
+
+.card.today {
+  background: rgba(80, 255, 160, 0.4);
+}
+
+.section-title {
+  margin-top: 32px;
+}
+
+.logout-btn {
+  margin-top: 32px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #ff5f5f;
+  color: white;
+}
+
+.loading {
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}

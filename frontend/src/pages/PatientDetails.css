@@ -1,0 +1,209 @@
+/* ================= PAGE BASE ================= */
+.patient-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  background:
+    linear-gradient(
+      rgba(10, 20, 30, 0.65),
+      rgba(10, 20, 30, 0.85)
+    ),
+    url("/doctor.jpg");
+
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* ================= DARK OVERLAY (LANDING STYLE) ================= */
+.patient-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.25)
+  );
+  z-index: 0;
+}
+
+/* ================= LEFT : DOCTOR LIST ================= */
+.doctor-section {
+  flex: 1.3;
+  padding: 50px;
+  z-index: 1;
+}
+
+.doctor-section h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+
+/* GRID */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+/* TILE – SOFTER */
+.doctor-tile {
+  padding: 18px;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.22);
+
+  transition: all 0.25s ease;
+}
+
+.doctor-tile:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.16);
+}
+
+.doctor-tile h4 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.doctor-tile p {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.doctor-tile span {
+  font-size: 12px;
+  opacity: 0.65;
+}
+
+/* ENTER BTN */
+.enter-btn {
+  margin-top: 30px;
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0,198,255,0.35);
+}
+
+.enter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0,198,255,0.45);
+}
+
+/* ================= RIGHT : PATIENT FORM ================= */
+.patient-form {
+  width: 420px;
+  height: 100%;
+  padding: 48px 38px;
+
+  background: rgba(14, 22, 30, 0.9);
+  backdrop-filter: blur(18px);
+
+  box-shadow: -25px 0 60px rgba(0,0,0,0.6);
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  z-index: 1;
+}
+
+/* TITLE */
+.patient-form h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* INPUTS – CALM (NO GLOW) */
+.patient-form input,
+.patient-form select,
+.patient-form textarea {
+  padding: 13px 14px;
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+
+  color: #fff;
+  font-size: 14px;
+
+  outline: none;
+  transition: background 0.2s ease, border 0.2s ease;
+}
+
+.patient-form input::placeholder,
+.patient-form textarea::placeholder {
+  color: rgba(255,255,255,0.55);
+}
+
+/* FOCUS – NO GLOW */
+.patient-form input:focus,
+.patient-form select:focus,
+.patient-form textarea:focus {
+  border-color: rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.14);
+  box-shadow: none;
+}
+
+/* SELECT DROPDOWN */
+.patient-form select option {
+  background: #0f1d28;
+  color: #fff;
+}
+
+/* TEXTAREA */
+.patient-form textarea {
+  resize: none;
+  height: 78px;
+}
+
+/* ================= CONTINUE BUTTON ================= */
+.patient-form button {
+  margin-top: 18px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0,198,255,0.35);
+  transition: all 0.25s ease;
+}
+
+.patient-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 42px rgba(0,198,255,0.5);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+  .doctor-section {
+    display: none;
+  }
+
+  .patient-form {
+    width: 100%;
+    box-shadow: none;
+  }
+}
